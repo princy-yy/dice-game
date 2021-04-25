@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>my</title>
+<body>
+
+
+
+
+<script>
+function ValidateUSPhoneNumber(phoneNumber) {
+  var regExp = /^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/;
+  var phone = phoneNumber.match(regExp);
+  if (phone) {
+    alert('yes');
+    return true;
+  }
+  alert('no');
+  return false;
+}
+</script>
+</body>
+</html>
